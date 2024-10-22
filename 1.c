@@ -5,16 +5,13 @@
 Данные на выходе: Строка вида %d+%d+%d=%d
 */
 
-
 #include <stdio.h>
+
 int main(void)
 {
-int a, b, c;
-float average;
- scanf("%d%d%d", &a, &b, &c); //без пробелов
- average = a + b + c;
- average /= 3.;//точка обязательна - это вещественный
-литерал, показать что будет average = (a + b + c) / 3;
- printf("%.2f\n", average);
- return 0;
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    printf("%d+%d+%d=%d", a, b, c, a + b + c);
+
+    return 0;
 }
